@@ -13,13 +13,14 @@
         <link rel="stylesheet" href="">
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <!-- include ar.js for A-Frame -->
-        <script src="https://github.com/AR-js-org/AR.js/blob/master/aframe/build/aframe-ar.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     </head>
     <body style="margin : 0px; overflow: hidden;">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- reference: https://github.com/AR-js-org/AR.js -->
+        <a-camera></a-camera>
         <a-scene vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
         embedded
@@ -38,7 +39,6 @@
                     position="30 2 0"
                 ></a-entity>
         </a-nft>
-        <a-entity camera></a-entity>
         </a-scene>
         <script src="" async defer></script>
     </body>
