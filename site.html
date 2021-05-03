@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <!-- include ar.js for A-Frame -->
+        <script src="https://github.com/AR-js-org/AR.js/blob/master/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body style="margin : 0px; overflow: hidden;">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- reference: https://github.com/AR-js-org/AR.js -->
+        <a-scene vr-mode-ui="enabled: false;"
+        renderer="logarithmicDepthBuffer: true;"
+        embedded
+        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+            <a-nft
+                type="nft"
+                url="coin-3.jpeg"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5"
+            >
+                <a-entity
+                    gltf-model="coin-1.gltf"
+                    scale="1 1 1"
+                    position="30 2 0"
+                ></a-entity>
+        </a-nft>
+        <a-entity camera></a-entity>
+        </a-scene>
+        <script src="" async defer></script>
+    </body>
+</html>
