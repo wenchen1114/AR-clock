@@ -25,16 +25,19 @@
         renderer="logarithmicDepthBuffer: true;"
         embedded
         arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+            <a-assets>
+                <a-asset-item id="coin1" src="coin-1.gltf"></a-asset-item>
+            </a-assets>
             <a-nft
                 type="nft"
-                url="coin-1.jpeg"
+                url="coin-1.trex"
                 smooth="true"
                 smoothCount="10"
                 smoothTolerance=".01"
                 smoothThreshold="5"
             >
                 <a-entity
-                    gltf-model="coin-1.gltf"
+                    gltf-model="coin1"
                     scale="1 1 1"
                     position="30 2 0"
                 ></a-entity>
